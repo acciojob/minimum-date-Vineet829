@@ -1,5 +1,11 @@
 function minDate(dates) {
-  //write you code here
+    let arr = []
+	for(let i = 0; i< dates.length; i++){
+		arr.push(parseInt(dates[i].split("/")[2]))
+	}
+ let result = dates[arr.indexOf(Math.min(...arr))]
+	return result
+	
 }
 
 // Do not change the code
